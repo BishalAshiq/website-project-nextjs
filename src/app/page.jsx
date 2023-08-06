@@ -1,18 +1,20 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import Link from "next/link";
-import { Lottie } from "lottie-react";
+import lottie from "lottie-web";
 import homeBanner from "../../public/Home-banner.json";
+import { useClient } from "next/server-components"; // Import useClient
 
 export default function Home() {
-  const homeLottie = {
-    loop: true,
-    autoplay: true,
-    animationData: homeBanner, // Your Lottie animation JSON
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
+  useClient();
+  useEffect(() => {
+    lottie.loadAnimation({
+      container: document.getElementById("lottie-container"), // Replace with your element ID
+      animationData: homeBanner,
+      loop: true,
+      autoplay: true,
+    });
+  }, []);
   return (
     <div className={styles.container}>
       <div className={styles.item}>
@@ -35,11 +37,10 @@ export default function Home() {
           height={500}
           width={500}
         /> */}
-        <Lottie
-          animationData={homeLottie} // Your Lottie animation JSON
-          loop
-          autoplay
-        />
+        <div
+          id="lottie-container"
+          style={{ width: "300px", height: "300px" }}
+        ></div>
       </div>
     </div>
   );
