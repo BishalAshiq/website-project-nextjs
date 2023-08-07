@@ -3,18 +3,18 @@ import styles from "./page.module.css";
 import Link from "next/link";
 import lottie from "lottie-web";
 import homeBanner from "../../public/Home-banner.json";
-import { useClient } from "next/server-components"; // Import useClient
+// import { useClient } from "next/server-components"; // Import useClient
 
 export default function Home() {
-  useClient();
-  useEffect(() => {
-    lottie.loadAnimation({
-      container: document.getElementById("lottie-container"), // Replace with your element ID
-      animationData: homeBanner,
-      loop: true,
-      autoplay: true,
-    });
-  }, []);
+  // useClient();
+  // useEffect(() => {
+  //   lottie.loadAnimation({
+  //     container: document.getElementById("lottie-container"), // Replace with your element ID
+  //     animationData: homeBanner,
+  //     loop: true,
+  //     autoplay: true,
+  //   });
+  // }, []);
   return (
     <div className={styles.container}>
       <div className={styles.item}>
@@ -30,17 +30,17 @@ export default function Home() {
         </Link>
       </div>
       <div className={styles.item}>
-        {/* <Image
+        <Image
           className={styles.img}
           src="/hero.png"
           alt="home-banner"
           height={500}
           width={500}
-        /> */}
-        <div
+        />
+        {/* <div
           id="lottie-container"
           style={{ width: "300px", height: "300px" }}
-        ></div>
+        ></div> */}
       </div>
     </div>
   );
