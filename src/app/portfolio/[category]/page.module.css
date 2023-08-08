@@ -1,5 +1,5 @@
 .container {
-  margin-top: 20%;
+  margin-top: 10%;
 }
 
 .catTitle {
@@ -35,6 +35,21 @@
   justify-content: center;
 }
 
+.see_more_button {
+  padding: 15px 20px;
+  font-weight: 700;
+  width: 200px;
+  border: none;
+  border-radius: 20px;
+}
+.see_more_button:hover {
+  background: #0fe78a;
+  cursor: pointer;
+  /* border: none; */
+  font-weight: 700;
+
+  color: white;
+}
 .title {
   font-size: 50px;
 }
