@@ -1,14 +1,24 @@
 .container {
-  display: flex;
-  align-items: center;
-  gap: 50px;
-  margin-bottom: 50px;
+  margin-top: 8%;
 }
-
+.all_blog_div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+.single_div {
+  padding-bottom: 10%;
+}
 .image {
   object-fit: cover;
 }
-
+.blog_des {
+  text-align: justify;
+  padding: 1% 10%;
+}
 .content {
 }
 
