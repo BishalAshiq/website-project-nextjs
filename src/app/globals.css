@@ -11,6 +11,14 @@ body {
   background-color: #111;
   color: #bbb;
 }
+.light {
+  background-color: white;
+  color: #111;
+}
+.dark {
+  background-color: #111;
+  color: white;
+}
 
 a {
   text-decoration: none;

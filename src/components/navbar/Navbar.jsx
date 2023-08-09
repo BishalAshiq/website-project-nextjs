@@ -3,6 +3,7 @@ import NavbarCss from "./page.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import DarkModeToggle from "../DarkModeToggle/DarkModeToggle";
 
 const links = [
   {
@@ -50,6 +51,7 @@ const Navbar = () => {
       </Link>
 
       <div className={NavbarCss.links}>
+        <DarkModeToggle />
         {links.map((link) => (
           <Link key={link.id} href={link.url} className={NavbarCss.link}>
             {link.title}
