@@ -1,3 +1,4 @@
+"use client";
 import Navbar from "Yes~/components/navbar/Navbar";
 import "./globals.css";
 import { Inter, Roboto, Poppins } from "next/font/google";
