@@ -1,9 +1,10 @@
 "use client";
-import Navbar from "Yes~/components/navbar/Navbar";
+import React from "react";
 import "./globals.css";
 import { Inter, Roboto, Poppins } from "next/font/google";
-import Footer from "Yes~/components/footer/Footer";
-import { ThemeProvider } from "../../context/ThemeContext";
+import Footer from "@/components/footer/Footer";
+import Navbar from "@/components/navbar/Navbar";
+import { ThemeProvider } from "@/context/ThemeContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
