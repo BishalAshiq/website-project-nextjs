@@ -32,7 +32,25 @@
 } */
 
 .blog_div {
-  margin-top: 8%;
+  margin-top: 10%;
+}
+
+.blogs_tag {
+  display: grid;
+  place-items: center;
+}
+.single_blog_tag {
+  margin-top: 5%;
+}
+.single_blog_para {
+  text-align: justify;
+  font-weight: 300;
+  margin-top: 20px;
+  font-size: 0.8rem;
+}
+.see_more_button {
+  font-size: 0.7rem;
+  cursor: pointer;
 }
 .container {
   display: flex;

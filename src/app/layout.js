@@ -5,8 +5,12 @@ import { Inter, Roboto, Poppins } from "next/font/google";
 import Footer from "@/components/footer/Footer";
 import Navbar from "@/components/navbar/Navbar";
 import { ThemeProvider } from "@/context/ThemeContext";
-
+import axios from "axios";
 const inter = Inter({ subsets: ["latin"] });
+
+// axios.defaults.baseURL = "http://localhost:7000/";
+axios.defaults.headers.post["Content-Type"] = "application/json";
+axios.defaults.headers.post["Accept"] = "application/json";
 
 export const metadata = {
   title: "Md. Ashiqul Islam",

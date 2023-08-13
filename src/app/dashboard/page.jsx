@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import DashboardCss from "./page.module.css";
 import useSWR from "swr";
+import Users from "./users/page";
 
 const Dashboard = () => {
   // const [data, setData] = useState([]);
@@ -36,7 +37,7 @@ const Dashboard = () => {
 
   return (
     <div className={DashboardCss.dashboard_full_div}>
-      <h1>Dashboard</h1>
+      <Users />
     </div>
   );
 };
