@@ -14,7 +14,7 @@ const Users = () => {
   }, []);
   return (
     <div className={UserCss.all_users_blog}>
-      {allUsers.map((UserItem, i) => {
+      {allUsers.map((UserItem, index) => {
         return (
           <div>
             <p>{UserItem.name}</p>

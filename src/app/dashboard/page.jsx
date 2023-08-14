@@ -3,6 +3,8 @@ import React, { useEffect, useState } from "react";
 import DashboardCss from "./page.module.css";
 import useSWR from "swr";
 import Users from "./users/page";
+import Login from "./(auth)/login/page";
+import Register from "./(auth)/register/page";
 
 const Dashboard = () => {
   // const [data, setData] = useState([]);
@@ -37,7 +39,9 @@ const Dashboard = () => {
 
   return (
     <div className={DashboardCss.dashboard_full_div}>
-      <Users />
+      {/* <Users /> */}
+      <Login />
+      <Register />
     </div>
   );
 };
