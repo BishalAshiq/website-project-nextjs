@@ -54,21 +54,25 @@ const Login = () => {
     <div>
       <h1>Login</h1>
 
-      <div>
-        <form>
+      <div className={LoginCss.login_full_div}>
+        <form className={LoginCss.form_div}>
           <input
+            className={LoginCss.single_input}
             type="email"
             placeholder="Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
           <input
+            className={LoginCss.single_input}
             type="password"
             placeholder="Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <button onClick={handleLogin}>Login</button>
+          <button onClick={handleLogin} className={LoginCss.login_button}>
+            Login
+          </button>
           <GoogleAuth onSuccess={handleSuccess} />
         </form>
         <Link href="/dashboard/auth/register">Register</Link>

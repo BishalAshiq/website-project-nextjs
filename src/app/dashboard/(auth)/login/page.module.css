@@ -1,0 +1,29 @@
+.form_div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* width: fit-content; */
+  background: rgb(78, 77, 77);
+  height: 400px;
+  width: 80%;
+  box-shadow: 20px 20px 20px 20px rgb(44, 42, 42);
+  border-radius: 20px;
+}
+.single_input {
+  width: 40%;
+  padding: 10px 0;
+  margin-bottom: 1%;
+  border-top: 25%;
+  border: none;
+}
+.login_button {
+  padding: 5px 50px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.login_full_div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
