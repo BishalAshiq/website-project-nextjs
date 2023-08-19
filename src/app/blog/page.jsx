@@ -58,9 +58,9 @@ const Blog = () => {
   };
 
   return (
-    <div className={BlogCss.blog_div}>
+    <div className="w-3/5 -mx-10 mt-10 md:scroll-py-0 md:w-4/5 md:mx-auto md:mt-10 md:overflow-hidden ">
       <h1 className={BlogCss.blogs_tag}>All Blogs</h1>
-      <div className={BlogCss.mainContainer}>
+      <div className="md:items-center md:justify-center md:flex-col md:flex-auto">
         {allPosts.map((item, index) => {
           const isExpanded = expandedIndex === index;
 

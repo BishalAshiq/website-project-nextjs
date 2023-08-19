@@ -16,12 +16,12 @@ export default function Home() {
   //   });
   // }, []);
   return (
-    <div className={styles.container}>
+    <div className="flex items-center gap-10 mt-20">
       <div className={styles.item}>
         <h1 className={styles.title}>
           Better development for your Better Web Application.
         </h1>
-        <p className={styles.desc}>
+        <p className="text-1xl font-medium">
           Turning your Idea into Reality. We bring together the teams from the
           global tech industry.
         </p>

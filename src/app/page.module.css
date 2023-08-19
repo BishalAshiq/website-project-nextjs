@@ -1,9 +1,9 @@
-.container {
+/* .container {
   display: flex;
   align-items: center;
   gap: 100px;
   margin-top: 7%;
-}
+} */
 
 .item {
   flex: 1;
@@ -54,7 +54,7 @@
   }
 }
 
-.desc {
+/* .desc {
   font-size: 24px;
   font-weight: 300;
-}
+} */
