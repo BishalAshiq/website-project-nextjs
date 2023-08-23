@@ -1,0 +1,31 @@
+.register_full_div {
+  /* margin-bottom: 20%; */
+  /* padding-bottom: 10%; */
+}
+.register_div {
+  /* border: 1px solid white; */
+  /* position: fixed; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* width: 50%;
+  height: 100vh; */
+  overflow-x: hidden;
+}
+.register_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.single_inputs {
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding: 10px 30px;
+}
+
+.google_button {
+  cursor: pointer;
+  color: black;
+}

@@ -53,35 +53,47 @@ const Register = () => {
   };
 
   return (
-    <div>
-      <h1>Register</h1>
-
-      <input
-        type="text"
-        placeholder="Name"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-      />
-      <input
-        type="email"
-        placeholder="Email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-      />
-      <input
-        type="password"
-        placeholder="Password"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-      />
-      <input
-        type="password"
-        placeholder="Confirm Password"
-        value={confirmPassword}
-        onChange={(e) => setConfirmPassword(e.target.value)}
-      />
-      <button onClick={handleRegistration}>Register</button>
-      <GoogleAuth onSuccess={handleSuccess} />
+    <div className={RegisterCss.register_full_div}>
+      <div className={RegisterCss.register_div}>
+        <h1 className="mb-6 font-bold text-xl/10">Register</h1>
+        <form className={RegisterCss.register_form}>
+          <input
+            className={RegisterCss.single_inputs}
+            type="text"
+            placeholder="Name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+          <input
+            className={RegisterCss.single_inputs}
+            type="email"
+            placeholder="Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <input
+            className={RegisterCss.single_inputs}
+            type="password"
+            placeholder="Password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          <input
+            className={RegisterCss.single_inputs}
+            type="password"
+            placeholder="Confirm Password"
+            value={confirmPassword}
+            onChange={(e) => setConfirmPassword(e.target.value)}
+          />
+          {/* <button onClick={handleRegistration}>Register</button> */}
+          <div>
+            <GoogleAuth
+              onSuccess={handleSuccess}
+              className={RegisterCss.google_button}
+            />
+          </div>
+        </form>
+      </div>
     </div>
   );
 };

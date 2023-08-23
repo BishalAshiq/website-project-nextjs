@@ -27,3 +27,7 @@
   justify-content: center;
   flex-direction: column;
 }
+.google_button_login {
+  cursor: pointer;
+  color: black;
+}

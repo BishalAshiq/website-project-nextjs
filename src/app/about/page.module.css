@@ -42,7 +42,7 @@
 .contact_button_link {
   padding: 7px 20px;
   border: 1px solid gray;
-  width: 120px;
+  width: 130px;
   background: #0fe78a;
 }
 .contact_button_link:hover {
@@ -54,6 +54,7 @@
   font-weight: 700;
   background: #0fe78a;
   color: rgb(255, 255, 255);
+  width: 100px;
 }
 .contact_button:hover {
   cursor: pointer;

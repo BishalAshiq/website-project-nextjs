@@ -52,10 +52,9 @@ const Login = () => {
 
   return (
     <div>
-      <h1>Login</h1>
-
       <div className={LoginCss.login_full_div}>
         <form className={LoginCss.form_div}>
+          <h1 className="mb-6 font-bold text-xl/10">Login</h1>
           <input
             className={LoginCss.single_input}
             type="email"
@@ -70,12 +69,15 @@ const Login = () => {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <button onClick={handleLogin} className={LoginCss.login_button}>
+          {/* <button onClick={handleLogin} className={LoginCss.login_button}>
             Login
-          </button>
-          <GoogleAuth onSuccess={handleSuccess} />
+          </button>*/}
+          <GoogleAuth
+            onSuccess={handleSuccess}
+            className={LoginCss.google_button_login}
+          />
         </form>
-        <Link href="/dashboard/auth/register">Register</Link>
+        {/* <Link href="/dashboard/auth/register">Register</Link> */}
       </div>
     </div>
   );
